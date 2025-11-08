@@ -1,0 +1,129 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Thumbnails
+.Spotlight-V100
+.Trashes
+
+# SSH - NUNCA incluir claves privadas
+.ssh/id_rsa
+.ssh/id_dsa
+.ssh/id_ecdsa
+.ssh/id_ed25519
+.ssh/*.pem
+.ssh/known_hosts
+.ssh/authorized_keys
+
+# GPG
+.gnupg/
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.swp
+*.swo
+*~
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn.lock
+package-lock.json
+.npm
+.yarn/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# Ruby
+.bundle/
+vendor/
+
+# Databases
+*.sqlite
+*.sqlite3
+*.db
+
+# Environment variables y secretos
+.env
+.env.local
+.env.*.local
+secrets.yml
+secrets.json
+*.secret
+
+# Credenciales y tokens
+*.key
+*.crt
+*.p12
+*.pfx
+.credentials
+credentials.json
+token.json
+
+# Backups
+*.bak
+*.backup
+*~
+*.swp
+*.orig
+
+# Cachés y temporales
+.cache/
+*.tmp
+tmp/
+temp/
+.tmp/
+
+# Configuraciones locales específicas de máquina
+.local/
+local.yml
+local.json
+
+# Homebrew
+Brewfile.lock.json
+
+# Oh My Zsh
+.oh-my-zsh/
+
+# Historial de shell (puede contener información sensible)
+.zsh_history
+.bash_history
+.history
+
+# Configuraciones privadas
+private/
+*.private
+
+# Archivos grandes
+*.dmg
+*.iso
+*.tar.gz
+*.zip
