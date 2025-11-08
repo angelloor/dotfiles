@@ -4,11 +4,10 @@ Este repositorio contiene mis configuraciones personales y de entorno de desarro
 
 ## 📦 Contenido
 
-- **Configuración de shell**: `.zshrc`, aliases y funciones personalizadas
+- **Configuración de shell**: `.zshrc` con configuración de Zsh y Powerlevel9k
 - **Configuración de Git**: `.gitconfig` con mis preferencias
-- **Configuración de SSH**: `.ssh/config` (sin claves privadas)
-- **Configuración de editores**: VSCode, Neovim
-- **Configuración de terminal**: Starship prompt
+- **Configuración de SSH**: `.ssh/config` (plantilla sin claves privadas)
+- **Variables de entorno**: `.env.example` (plantilla para API keys y secretos)
 - **Brewfile**: Lista de todas las aplicaciones instaladas vía Homebrew
 
 ## 🚀 Instalación rápida
@@ -16,7 +15,7 @@ Este repositorio contiene mis configuraciones personales y de entorno de desarro
 En una Mac nueva, ejecuta:
 
 ```bash
-git clone git@github.com:<TU_USUARIO>/dotfiles.git ~/dotfiles
+git clone https://github.com/angelloor/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 chmod +x install.sh
 ./install.sh
@@ -55,11 +54,27 @@ git commit -m "Descripción de los cambios"
 git push
 ```
 
-## ⚠️ Notas
+## ⚠️ Notas de seguridad
 
-- Las claves privadas SSH nunca se incluyen en este repositorio
+- **Nunca** comitees claves privadas SSH al repositorio
+- Las API keys y secretos deben ir en `~/.env` (archivo local, no versionado)
+- Usa `.env.example` como plantilla para configurar tus variables de entorno
 - Revisa el `.gitignore` para ver qué archivos están excluidos
 - Haz backup de tus configuraciones actuales antes de ejecutar el script de instalación
+
+## 🔐 Configurar variables de entorno
+
+Después de clonar el repositorio:
+
+```bash
+# Copiar la plantilla
+cp ~/dotfiles/.env.example ~/.env
+
+# Editar y agregar tus API keys reales
+nano ~/.env
+
+# El .zshrc ya está configurado para cargar ~/.env automáticamente
+```
 
 ## 🛠️ Mantenimiento
 
@@ -71,4 +86,5 @@ Para agregar nuevas configuraciones al repositorio:
 
 ---
 
-**Última actualización**: $(date +%Y-%m-%d)
+**Autor**: Angel Loor  
+**Repositorio**: https://github.com/angelloor/dotfiles

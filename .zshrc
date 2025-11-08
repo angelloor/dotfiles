@@ -134,3 +134,6 @@ export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
 # Luego carga: [ -f ~/.env ] && source ~/.env
 
 . "$HOME/.local/bin/env"
+
+# Cargar variables de entorno locales (API keys, secretos, etc.)
+[ -f ~/.env ] && source ~/.env
